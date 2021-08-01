@@ -1,0 +1,63 @@
+<form id="frmLogadoCarrinho" name="logado">
+  <input id="id" name="id" type="hidden" value="6">
+  <input id="sobrenome" name="sobrenome" type="hidden" value="Sandler">
+  <input id="email" name="email" type="hidden" value="adam@gmail.com">
+  <input id="login" name="login" type="hidden" value="adam.s">
+  <input id="cpf" name="cpf" type="hidden" value="1234567890123">
+  <input id="fone" name="fone" type="hidden" value="(41) 3231-0332">
+  <input d="saldocarteira" name="saldocarteira" type="hidden" value="7580">
+  <input id="receita" name="receita" type="hidden" value="2950">
+  <input id="lojaId" name="lojaId" type="hidden" value="2">
+  <input id="endereco" name="endereco" type="hidden" value="Rua Mal. Floriano, 320">
+  <input id="cidade" name="cidade" type="hidden" value="Curitiba">
+  <input id="estado" name="estado" type="hidden" value="Paraná">
+  <input id="cep" name="cep" type="hidden" value="90201-899">
+  <div>
+    <label for="nome">Cliente</label>
+    <input disabled="" id="nome" name="nome" type="text">
+  </div>
+  <div>
+    <label for="itensCarrinho" style="margin-top: 15px">Itens do carrinho</label>
+    <table id="itensCarrinho" name="itensCarrinho">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th class="alinhaNoCentro">Quantidade</th>
+          <th class="alinhaADireita">Valor unitário</th>
+          <th class="alinhaADireita">Valor total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="alinhaNoCentro">
+          <td class="alinhaAEsquerda">Bruschetta de salmão e abacate</td>
+          <td class="seletores alinhaNoCentro"><img class="btnDown" src="./img/btn_down.png"><input type="text" value="1"><img class="btnUp" src="./img/btn_up.png"></td>
+          <td class="alinhaADireita">R$&nbsp;52,49</td>
+          <td class="alinhaADireita">R$&nbsp;52,49</td>
+        </tr>
+        <tr class="alinhaNoCentro">
+          <td class="alinhaAEsquerda">Croque Madame</td>
+          <td class="seletores alinhaNoCentro"><img class="btnDown" src="./img/btn_down.png"><input type="text" value="5"><img class="btnUp" src="./img/btn_up.png"></td>
+          <td class="alinhaADireita">R$&nbsp;35,10</td>
+          <td class="alinhaADireita">R$&nbsp;175,50</td>
+        </tr>
+        <tr class="alinhaNoCentro">
+          <td class="alinhaAEsquerda">Sanduíche de torrada escura</td>
+          <td class="seletores alinhaNoCentro"><img class="btnDown" src="./img/btn_down.png"><input type="text" value="3"><img class="btnUp" src="./img/btn_up.png"></td>
+          <td class="alinhaADireita">R$&nbsp;28,14</td>
+          <td class="alinhaADireita">R$&nbsp;84,42</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="alinhaADireita">
+            <strong>Total</strong>
+          </td>
+          <td id="vlrTotal" style="font-weight: 700" class="alinhaADireita">R$&nbsp;312,41</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <label></label>
+  <div style="text-align: right"><input id="btnConfirmar" style="margin-top: 20px" type="button" value="Confirmar pedido"></div>
+</form>
+     

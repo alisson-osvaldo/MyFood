@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>MyFood</title>
+  </head>
+  <body>
+    <header><img class="logo" src="./img/myfood.png">
+      <nav class="menu">
+        <ul>
+          <li id="menu-home" class="menu-item">
+            <a href="/" path="home">Home</a>
+          </li>
+          <span>|</span>
+          <li id="menu-cardapio" class="menu-item">
+            <a href="/" path="cardapio">Cardápio</a>
+          </li>
+          <span>|</span>
+          <li id="menu-carrinho" class="menu-item">
+            <a href="/" path="carrinho" id="menuCarrinho">Carrinho
+              <span style="color:red">(9)
+              </span>
+            </a>
+          </li>
+          <span>|</span>
+          <li id="menu-cadastros" class="menu-item">
+            <a href="/" path="cadastros">Cadastros</a>
+          </li>
+          <span>|</span>
+          <li id="menu-sobre" class="menu-item">
+            <a href="/" path="sobre">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class="tab">
+          <button class="tablinks active">
+              <a style="color: black;text-decoration: none;" 
+                 href="/produtos_listar.html">Produtos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/clientes_listar.html">Clientes</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pedidos_listar.html">Pedidos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/categorias_listar.html">Categorias</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/status_listar.html">Status</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pratodia.html">Prato do dia</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/logado.html">Logado</a>
+          </button>
+        </div>
+
+
+        <div id="pedidos" style="display: block;" class="tabcontent">
+          <h3>Editar pedido</h3>
+
+          <div class="formularios">
+            <form name="pedidos" action="/#" method="post">
+              <input id="id" name="id" type="hidden" value="4252">
+              <div>
+                <label for="data">Data</label>
+                <input disabled="" id="data" name="data" type="text">
+              </div>
+              <div>
+                <label for="nome">Nome</label>
+                <input disabled="" id="nome" name="nome" type="text">
+              </div>
+              <div>
+                <label for="status">Status</label>
+                <select id="status" name="status">
+                  <option value="1">Em processamento</option>
+                  <option value="2">Aguardando</option>
+                  <option value="3">Recusado</option>
+                  <option value="4">Pendente</option>
+                  <option value="5">Concluído</option>
+                  <option value="6">Cancelado</option>
+                </select>
+              </div>
+              <div>
+                <label for="itensPedido" style="margin-top: 15px">
+                  <strong>Itens do pedido</strong>
+                </label>
+                <table id="itensPedido" name="itensPedido">
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th class="alinhaNoCentro">Quantidade</th>
+                      <th class="alinhaADireita">Valor unitário</th>
+                      <th class="alinhaADireita">Valor total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="alinhaNoCentro">
+                      <td class="alinhaAEsquerda">Bruschetta de salmão e abacate</td>
+                      <td class="seletores alinhaNoCentro"><img class="btnDown" src="./img/btn_down.png"><input type="text"><img class="btnUp" src="./img/btn_up.png"></td>
+                      <td class="alinhaADireita">R$&nbsp;52,49</td>
+                      <td class="alinhaADireita">R$&nbsp;209,96</td>
+                    </tr>
+                    <tr class="alinhaNoCentro">
+                      <td class="alinhaAEsquerda">Sopa de cebola</td>
+                      <td class="seletores alinhaNoCentro"><img class="btnDown" src="./img/btn_down.png"><input type="text"><img class="btnUp" src="./img/btn_up.png"></td>
+                      <td class="alinhaADireita">R$&nbsp;23,50</td>
+                      <td class="alinhaADireita">R$&nbsp;47,00</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="3" class="alinhaADireita">
+                        <strong>Total Geral</strong>
+                      </td>
+                      <td id="vlrTotal" style="font-weight: 700" class="alinhaADireita">R$&nbsp;256,96</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <label></label>
+              <input id="btnSalvar" type="button" value="Salvar">
+              <input id="btnCancelar" type="button" value="Cancelar">
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <span class="footer">
+          <strong>© 2021 MyFood</strong>. Todos os direitos reservados.
+        </span>
+      </footer>
+    </div>
+    <!-- <script type="module" src="./js/index.js"></script> -->
+  </body>
+  </html>

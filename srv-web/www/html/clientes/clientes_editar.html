@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>MyFood</title>
+  </head>
+  <body>
+    <header><img class="logo" src="./img/myfood.png">
+      <nav class="menu">
+        <ul>
+          <li id="menu-home" class="menu-item">
+            <a href="/" path="home">Home</a>
+          </li>
+          <span>|</span>
+          <li id="menu-cardapio" class="menu-item">
+            <a href="/" path="cardapio">Cardápio</a>
+          </li>
+          <span>|</span>
+          <li id="menu-carrinho" class="menu-item">
+            <a href="/" path="carrinho" id="menuCarrinho">Carrinho
+              <span style="color:red">(9)
+              </span>
+            </a>
+          </li>
+          <span>|</span>
+          <li id="menu-cadastros" class="menu-item">
+            <a href="/" path="cadastros">Cadastros</a>
+          </li>
+          <span>|</span>
+          <li id="menu-sobre" class="menu-item">
+            <a href="/" path="sobre">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class="tab">
+          <button class="tablinks active">
+              <a style="color: black;text-decoration: none;" 
+                 href="/produtos_listar.html">Produtos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/clientes_listar.html">Clientes</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pedidos_listar.html">Pedidos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/categorias_listar.html">Categorias</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/status_listar.html">Status</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pratodia.html">Prato do dia</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/logado.html">Logado</a>
+          </button>
+        </div>
+
+        <div id="clientes" style="display: block;" class="tabcontent">
+          <h3>Editar cliente</h3>
+
+          <div class="formularios">
+            <form id="frmClientes" name="clientes">
+              <input id="id" name="id" type="hidden" value="1">
+              <div>
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text">
+              </div>
+              <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" name="sobrenome" type="text">
+              </div>
+              <div>
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text">
+              </div>
+              <div>
+                <label for="login">Login</label>
+                <input id="login" name="login" type="text">
+              </div>
+              <div>
+                <label for="cpf">CPF</label>
+                <input id="cpf" name="cpf" type="text">
+              </div>
+              <div>
+                <label for="fone">Telefone</label>
+                <input id="fone" name="fone" type="text">
+              </div>
+              <div>
+                <label for="saldocarteira">Saldo carteira R$</label>
+                <input class="pequeno" id="saldocarteira" name="saldocarteira" value="0" type="number" step=".01">
+              </div>
+              <div>
+                <label for="receita">Receita R$</label>
+                <input class="pequeno" id="receita" name="receita" value="0" type="number" step=".01">
+              </div>
+              <div>
+                <label for="loja">Loja</label>
+                <select id="loja" name="loja">
+                  <option value="1">Loja Centro</option>
+                  <option value="2">Loja Alto da XV</option>
+                  <option value="3">Loja Água Verde</option>
+                </select>
+              </div>
+              <div>
+                <label for="endereco">Endereço</label>
+                <input id="endereco" name="endereco" type="text">
+              </div>
+              <div>
+                <label for="cidade">Cidade</label>
+                <input id="cidade" name="cidade" type="text">
+              </div>
+              <div>
+                <label for="estado">Estado</label>
+                <input id="estado" name="estado" type="text">
+              </div>
+              <div>
+                <label for="cep">CEP</label>
+                <input id="cep" name="cep" type="text">
+              </div>
+              <label></label>
+              <input id="btnSalvar" type="button" value="Salvar">
+              <input id="btnCancelar" type="button" value="Cancelar">
+            </form>
+          </div>
+
+        </div>
+
+      </main>
+      <footer>
+        <span class="footer">
+          <strong>© 2021 MyFood</strong>. Todos os direitos reservados.
+        </span>
+      </footer>
+    </div>
+    <!-- <script type="module" src="./js/index.js"></script> -->
+  </body>
+  </html>

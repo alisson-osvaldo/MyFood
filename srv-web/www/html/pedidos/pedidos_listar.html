@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>MyFood</title>
+  </head>
+  <body>
+    <header><img class="logo" src="./img/myfood.png">
+      <nav class="menu">
+        <ul>
+          <li id="menu-home" class="menu-item">
+            <a href="/" path="home">Home</a>
+          </li>
+          <span>|</span>
+          <li id="menu-cardapio" class="menu-item">
+            <a href="/" path="cardapio">Cardápio</a>
+          </li>
+          <span>|</span>
+          <li id="menu-carrinho" class="menu-item">
+            <a href="/" path="carrinho" id="menuCarrinho">Carrinho
+              <span style="color:red">(9)
+              </span>
+            </a>
+          </li>
+          <span>|</span>
+          <li id="menu-cadastros" class="menu-item">
+            <a href="/" path="cadastros">Cadastros</a>
+          </li>
+          <span>|</span>
+          <li id="menu-sobre" class="menu-item">
+            <a href="/" path="sobre">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class="tab">
+          <button class="tablinks active">
+              <a style="color: black;text-decoration: none;" 
+                 href="/produtos_listar.html">Produtos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/clientes_listar.html">Clientes</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pedidos_listar.html">Pedidos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/categorias_listar.html">Categorias</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/status_listar.html">Status</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pratodia.html">Prato do dia</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/logado.html">Logado</a>
+          </button>
+        </div>
+        
+        <div id="pedidos" style="display: block;" class="tabcontent">
+          <div class="titulosListas">
+            <h3>Lista de pedidos</h3>
+          </div>
+
+          <table class="pedidos">
+            <thead>
+              <tr>
+                <th style="width: 50px">Código</th>
+                <th style="width: 100px">Data</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Telefone</th>
+                <th>Status</th>
+                <th class="alinhaADireita">Total</th>
+                <th class="alinhaADireita" style="width: 150px">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4252</td>
+                <td>06/06/2021</td>
+                <td>Julia Aniston</td>
+                <td>123.456.789-0123</td>
+                <td>(41) 3231-0332</td>
+                <td>Cancelado</td>
+                <td class="alinhaADireita">R$&nbsp;256,96</td>
+                <td class="alinhaADireita">
+                  <a href="#" style="display: inline-block; width: 40px; margin-right: 15px;">Detalhes</a>
+                  <a href="/pedidos_editar.html" style="display: inline-block; width: 30px;">Editar</a>
+                </td>
+              </tr>
+              <tr id="id_4252" visivel="false" style="width: 100%; display: none;">
+                <td colspan="2"></td>
+                <td colspan="5">
+                  <table class="pedidoItens">
+                    <thead>
+                      <th style="padding-left: 20px;">Nome</th>
+                      <th class="alinhaNoCentro" style="width: 100px;">Quantidade</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor unitário</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor total</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding-left: 20px;">Bruschetta de salmão e abacate</td>
+                        <td class="alinhaNoCentro">4</td>
+                        <td class="alinhaADireita">R$&nbsp;52,49</td>
+                        <td class="alinhaADireita">R$&nbsp;209,96</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-left: 20px;">Sopa de cebola</td>
+                        <td class="alinhaNoCentro">2</td>
+                        <td class="alinhaADireita">R$&nbsp;23,50</td>
+                        <td class="alinhaADireita">R$&nbsp;47,00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>4253</td>
+                <td>06/06/2021</td>
+                <td>Julia Aniston</td>
+                <td>123.456.789-0123</td>
+                <td>(41) 3231-0332</td>
+                <td>Concluído</td>
+                <td class="alinhaADireita">R$&nbsp;231,80</td>
+                <td class="alinhaADireita">
+                  <a href="/pedidos/4253" style="display: inline-block; width: 40px; margin-right: 15px;">Detalhes</a>
+                  <a href="/pedidos/4253" style="display: inline-block; width: 30px;">Editar</a>
+                </td>
+              </tr>
+              <tr id="id_4253" visivel="false" style="width: 100%; display: none;">
+                <td colspan="2"></td>
+                <td colspan="5">
+                  <table class="pedidoItens">
+                    <thead>
+                      <th style="padding-left: 20px;">Nome</th>
+                      <th class="alinhaNoCentro" style="width: 100px;">Quantidade</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor unitário</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor total</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding-left: 20px;">Prato de queijo</td>
+                        <td class="alinhaNoCentro">1</td>
+                        <td class="alinhaADireita">R$&nbsp;20,30</td>
+                        <td class="alinhaADireita">R$&nbsp;20,30</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-left: 20px;">Lanche especial de berinjelas</td>
+                        <td class="alinhaNoCentro">2</td>
+                        <td class="alinhaADireita">R$&nbsp;21,90</td>
+                        <td class="alinhaADireita">R$&nbsp;43,80</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-left: 20px;">Salada Russa</td>
+                        <td class="alinhaNoCentro">2</td>
+                        <td class="alinhaADireita">R$&nbsp;25,10</td>
+                        <td class="alinhaADireita">R$&nbsp;50,20</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-left: 20px;">Sopa de cebola</td>
+                        <td class="alinhaNoCentro">5</td>
+                        <td class="alinhaADireita">R$&nbsp;23,50</td>
+                        <td class="alinhaADireita">R$&nbsp;117,50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>4254</td>
+                <td>07/05/2021</td>
+                <td>Julia Aniston</td>
+                <td>123.456.789-0123</td>
+                <td>(41) 3231-0332</td>
+                <td>Concluído</td>
+                <td class="alinhaADireita">R$&nbsp;210,02</td>
+                <td class="alinhaADireita">
+                  <a href="/pedidos/4254" style="display: inline-block; width: 40px; margin-right: 15px;">Detalhes</a>
+                  <a href="/pedidos/4254" style="display: inline-block; width: 30px;">Editar</a>
+                </td>
+              </tr>
+              <tr id="id_4254" visivel="false" style="width: 100%; display: none;">
+                <td colspan="2"></td>
+                <td colspan="5">
+                  <table class="pedidoItens">
+                    <thead>
+                      <th style="padding-left: 20px;">Nome</th>
+                      <th class="alinhaNoCentro" style="width: 100px;">Quantidade</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor unitário</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor total</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding-left: 20px;">Omelete misto</td>
+                        <td class="alinhaNoCentro">2</td>
+                        <td class="alinhaADireita">R$&nbsp;25,10</td>
+                        <td class="alinhaADireita">R$&nbsp;50,20</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-left: 20px;">Prato de queijo</td>
+                        <td class="alinhaNoCentro">5</td>
+                        <td class="alinhaADireita">R$&nbsp;20,30</td>
+                        <td class="alinhaADireita">R$&nbsp;101,50</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-left: 20px;">Berinjelas ao estilo oriental</td>
+                        <td class="alinhaNoCentro">3</td>
+                        <td class="alinhaADireita">R$&nbsp;19,44</td>
+                        <td class="alinhaADireita">R$&nbsp;58,32</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>4255</td>
+                <td>07/05/2021</td>
+                <td>Julia Aniston</td>
+                <td>123.456.789-0123</td>
+                <td>(41) 3231-0332</td>
+                <td>Concluído</td>
+                <td class="alinhaADireita">R$&nbsp;140,69</td>
+                <td class="alinhaADireita">
+                  <a href="/pedidos/4255" style="display: inline-block; width: 40px; margin-right: 15px;">Detalhes</a>
+                  <a href="/pedidos/4255" style="display: inline-block; width: 30px;">Editar</a>
+                </td>
+              </tr>
+              <tr id="id_4255" visivel="false" style="width: 100%; display: none;">
+                <td colspan="2"></td>
+                <td colspan="5">
+                  <table class="pedidoItens">
+                    <thead>
+                      <th style="padding-left: 20px;">Nome</th>
+                      <th class="alinhaNoCentro" style="width: 100px;">Quantidade</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor unitário</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor total</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding-left: 20px;">Petisco de batata</td>
+                        <td class="alinhaNoCentro">5</td>
+                        <td class="alinhaADireita">R$&nbsp;17,84</td>
+                        <td class="alinhaADireita">R$&nbsp;89,20</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-left: 20px;">Dolma do Azerbaijão</td>
+                        <td class="alinhaNoCentro">1</td>
+                        <td class="alinhaADireita">R$&nbsp;51,49</td>
+                        <td class="alinhaADireita">R$&nbsp;51,49</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>4256</td>
+                <td>06/06/2021</td>
+                <td>Julia Aniston</td>
+                <td>123.456.789-0123</td>
+                <td>(41) 3231-0332</td>
+                <td>Em processamento</td>
+                <td class="alinhaADireita">R$&nbsp;94,00</td>
+                <td class="alinhaADireita">
+                  <a href="/pedidos/4256" style="display: inline-block; width: 40px; margin-right: 15px;">Detalhes</a>
+                  <a href="/pedidos/4256" style="display: inline-block; width: 30px;">Editar</a>
+                </td>
+              </tr>
+              <tr id="id_4256" visivel="false" style="width: 100%; display: none;">
+                <td colspan="2"></td>
+                <td colspan="5">
+                  <table class="pedidoItens">
+                    <thead>
+                      <th style="padding-left: 20px;">Nome</th>
+                      <th class="alinhaNoCentro" style="width: 100px;">Quantidade</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor unitário</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor total</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding-left: 20px;">Sopa de cebola</td>
+                        <td class="alinhaNoCentro">4</td>
+                        <td class="alinhaADireita">R$&nbsp;23,50</td>
+                        <td class="alinhaADireita">R$&nbsp;94,00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>4257</td>
+                <td>06/06/2021</td>
+                <td>Adam Sandler</td>
+                <td>123.456.789-0123</td>
+                <td>(41) 3231-0332</td>
+                <td>Aguardando</td>
+                <td class="alinhaADireita">R$&nbsp;138,38</td>
+                <td class="alinhaADireita">
+                  <a href="/pedidos/4257" style="display: inline-block; width: 40px; margin-right: 15px;">Detalhes</a>
+                  <a href="/pedidos/4257" style="display: inline-block; width: 30px;">Editar</a>
+                </td>
+              </tr>
+              <tr id="id_4257" visivel="false" style="width: 100%; display: none;">
+                <td colspan="2"></td>
+                <td colspan="5">
+                  <table class="pedidoItens">
+                    <thead>
+                      <th style="padding-left: 20px;">Nome</th>
+                      <th class="alinhaNoCentro" style="width: 100px;">Quantidade</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor unitário</th>
+                      <th class="alinhaADireita" style="width: 100px;">Valor total</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding-left: 20px;">Acompanhamentos</td>
+                        <td class="alinhaNoCentro">4</td>
+                        <td class="alinhaADireita">R$&nbsp;27,56</td>
+                        <td class="alinhaADireita">R$&nbsp;110,24</td>
+                      </tr>
+                      <tr>
+                        <td style="padding-left: 20px;">Sanduíche de torrada escura</td>
+                        <td class="alinhaNoCentro">1</td>
+                        <td class="alinhaADireita">R$&nbsp;28,14</td>
+                        <td class="alinhaADireita">R$&nbsp;28,14</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+      </main>
+      <footer>
+        <span class="footer">
+          <strong>© 2021 MyFood</strong>. Todos os direitos reservados.
+        </span>
+      </footer>
+    </div>
+    <!-- <script type="module" src="./js/index.js"></script> -->
+  </body>
+  </html>

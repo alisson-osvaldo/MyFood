@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>MyFood</title>
+  </head>
+  <body>
+    <header><img class="logo" src="./img/myfood.png">
+      <nav class="menu">
+        <ul>
+          <li id="menu-home" class="menu-item">
+            <a href="/" path="home">Home</a>
+          </li>
+          <span>|</span>
+          <li id="menu-cardapio" class="menu-item">
+            <a href="/" path="cardapio">Cardápio</a>
+          </li>
+          <span>|</span>
+          <li id="menu-carrinho" class="menu-item">
+            <a href="/" path="carrinho" id="menuCarrinho">Carrinho
+              <span style="color:red">(9)
+              </span>
+            </a>
+          </li>
+          <span>|</span>
+          <li id="menu-cadastros" class="menu-item">
+            <a href="/" path="cadastros">Cadastros</a>
+          </li>
+          <span>|</span>
+          <li id="menu-sobre" class="menu-item">
+            <a href="/" path="sobre">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class="tab">
+          <button class="tablinks active">
+              <a style="color: black;text-decoration: none;" 
+                 href="/produtos_listar.html">Produtos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/clientes_listar.html">Clientes</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pedidos_listar.html">Pedidos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/categorias_listar.html">Categorias</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/status_listar.html">Status</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pratodia.html">Prato do dia</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/logado.html">Logado</a>
+          </button>
+        </div>
+
+        <div id="pratoDoDia" style="display: block;" class="tabcontent">
+          <h3>Prato do dia</h3>
+
+          <div class="formularios">
+            <form id="frmPratoDoDia" name="pratoDoDia">
+              <input id="idOriginal" name="idOriginal" type="hidden" value="1">
+              <input id="id" name="id" type="hidden" value="1">
+              <input id="preco" name="preco" type="hidden" value="27.56">
+              <input id="peso" name="peso" type="hidden" value="160">
+              <input id="foto" name="foto" type="hidden" value="cafe1.jpg">
+              <input id="desconto" name="desconto" type="hidden" value="0">
+              <input id="pontosDasAvaliacoes" name="pontosDasAvaliacoes" type="hidden" value="4">
+              <input id="totalDeAvaliacoes" name="totalDeAvaliacoes" type="hidden" value="350">
+              <input id="disponibilidade" name="disponibilidade" type="hidden" value="5">
+              <input id="totalDeCompras" name="totalDeCompras" type="hidden" value="0">
+              <input id="ehVegetariano" name="ehVegetariano" type="hidden" value="false">
+              <input id="categoriaId" name="categoriaId" type="hidden" value="1">
+              <div>
+                <label for="nome">Nome</label>
+                <input disabled="" id="nome" name="nome" type="text">
+              </div>
+              <div>
+                <label for="descricao">Descrição</label>
+                <input disabled="" id="descricao" name="descricao" type="text">
+              </div>
+              <div>
+                <label for="imgFoto">Foto</label>
+                <img disabled="" id="imgFoto" src="./img/cafe1.jpg">
+              </div>
+              <div>
+                <fieldset>
+                  <legend>
+                    <strong>Selecionar outro prato?</strong>
+                  </legend>
+                  <select id="selectPrato" name="selectPrato">
+                    <option value="1">Acompanhamentos</option>
+                    <option value="2">Bruschetta de salmão e abacate</option>
+                    <option value="3">Croque Madame</option>
+                    <option value="4">Panquecas de queijo</option>
+                    <option value="5">Sanduíche de queijo</option>
+                    <option value="6">Sanduíche de torrada escura</option>
+                    <option value="7">Omelete misto</option>
+                    <option value="8">Prato de queijo</option>
+                    <option value="9">Frios</option>
+                    <option value="10">Berinjelas ao estilo oriental</option>
+                    <option value="11">Lanche especial de berinjelas</option>
+                    <option value="12">Tomates marinados em vinagre</option>
+                    <option value="13">Petisco de batata</option>
+                    <option value="14">Salada de berinjela</option>
+                    <option value="15">Salada Russa</option>
+                    <option value="16">Salada crocante de berinjela</option>
+                    <option value="17">Sopa de frango com arroz</option>
+                    <option value="18">Sopa de macarrão com almôndegas</option>
+                    <option value="19">Sopa de cebola</option>
+                    <option value="20">Filé mignon com batata</option>
+                    <option value="21">Dolma do Azerbaijão</option>
+                    <option value="22">Fritas com Carne</option>
+                    <option value="23">Vitela com cogumelos em molho picante</option>
+                    <option value="24">Tabaka de frango</option>
+                    <option value="25">Filé de frango com batata</option>
+                    <option value="26">Frango árabe</option>
+                    <option value="27">Frutas da estação</option>
+                    <option value="28">Geléia</option>
+                    <option value="29">Variedade de frutas secas e nozes</option>
+                    <option value="30">Sorvete</option>
+                    <option value="31">Vinho tinto</option>
+                    <option value="32">Cerveja Pilsen</option>
+                    <option value="33">Xícara de chá</option>
+                    <option value="34">Capuccino</option>
+                    <option value="35">Coquetel de maracujá</option>
+                  </select>
+                </fieldset>
+              </div>
+              <label></label>
+              <input id="btnConfirmar" type="button" value="Confirmar">
+            </form>
+          </div>
+        </div>
+
+        <div id="logado" style="display: none;" class="tabcontent"></div>
+      </main>
+      <footer>
+        <span class="footer">
+          <strong>© 2021 MyFood</strong>. Todos os direitos reservados.
+        </span>
+      </footer>
+    </div>
+    <!-- <script type="module" src="./js/index.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>MyFood</title>
+  </head>
+  <body>
+    <header><img class="logo" src="./img/myfood.png">
+      <nav class="menu">
+        <ul>
+          <li id="menu-home" class="menu-item">
+            <a href="/" path="home">Home</a>
+          </li>
+          <span>|</span>
+          <li id="menu-cardapio" class="menu-item">
+            <a href="/" path="cardapio">Cardápio</a>
+          </li>
+          <span>|</span>
+          <li id="menu-carrinho" class="menu-item">
+            <a href="/" path="carrinho" id="menuCarrinho">Carrinho
+              <span style="color:red">(9)
+              </span>
+            </a>
+          </li>
+          <span>|</span>
+          <li id="menu-cadastros" class="menu-item">
+            <a href="/" path="cadastros">Cadastros</a>
+          </li>
+          <span>|</span>
+          <li id="menu-sobre" class="menu-item">
+            <a href="/" path="sobre">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class="tab">
+          <button class="tablinks active">
+              <a style="color: black;text-decoration: none;" 
+                 href="/produtos_listar.html">Produtos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/clientes_listar.html">Clientes</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pedidos_listar.html">Pedidos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/categorias_listar.html">Categorias</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/status_listar.html">Status</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pratodia.html">Prato do dia</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/logado.html">Logado</a>
+          </button>
+        </div>
+
+        <div id="produtos" class="tabcontent" style="display: none;">
+          <div class="titulosListas">
+            <h3>Lista de produtos</h3>
+            <a href="/">Incluir</a>
+          </div>
+
+          <table class="produtos">
+            <thead>
+              <tr>
+                <th style="width: 30px">ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th class="alinhaADireita">Preço</th>
+                <th style="width: 100px">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Acompanhamentos</td>
+                <td>Manteiga, nata, mel, requeijão salgado, queijo branco.</td>
+                <td class="alinharADireita">R$&nbsp;27,56</td>
+                <td>
+                  <a href="/produtos/1" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/1">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Bruschetta de salmão e abacate</td>
+                <td>Pão preto, salmão defumado, queijo Philadelphia, abacate, tomate, ovos.</td>
+                <td class="alinharADireita">R$&nbsp;52,49</td>
+                <td>
+                  <a href="/produtos/2" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/2">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Croque Madame</td>
+                <td>Pão torrado, salame de vitela, ovos, manteiga, queijo, rúcula, cenoura, pepino, rabanete.</td>
+                <td class="alinharADireita">R$&nbsp;35,10</td>
+                <td>
+                  <a href="/produtos/3" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/3">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Panquecas de queijo</td>
+                <td>Folhada, recheio de queijo, rúcula, cenoura, pepino, rabanete.</td>
+                <td class="alinharADireita">R$&nbsp;32,34</td>
+                <td>
+                  <a href="/produtos/4" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/4">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Sanduíche de queijo</td>
+                <td>Pão torrado, queijo cheddar, queijo gouda, manteiga, rúcula, cenoura, pepino, rabanete.</td>
+                <td class="alinharADireita">R$&nbsp;22,34</td>
+                <td>
+                  <a href="/produtos/5" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/5">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sanduíche de torrada escura</td>
+                <td>Pão escuro, presunto, ovos, queijo gouda, rúcula, cenoura, pepino, rabanete.</td>
+                <td class="alinharADireita">R$&nbsp;28,14</td>
+                <td>
+                  <a href="/produtos/6" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/6">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Omelete misto</td>
+                <td>Salada de ovos, filé de frango, queijo gouda, rúcula e tomate.</td>
+                <td class="alinharADireita">R$&nbsp;25,10</td>
+                <td>
+                  <a href="/produtos/7" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/7">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Prato de queijo</td>
+                <td>Queijo de leite de ovelha, queijo motal, requeijão, queijo branco.</td>
+                <td class="alinharADireita">R$&nbsp;20,30</td>
+                <td>
+                  <a href="/produtos/8" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/8">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Frios</td>
+                <td>Linguicinha, rolinho de frango, basturma de vitela.</td>
+                <td class="alinharADireita">R$&nbsp;25,82</td>
+                <td>
+                  <a href="/produtos/9" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/9">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Berinjelas ao estilo oriental</td>
+                <td>Berinjelas, nozes, curry, creme de leite, alho.</td>
+                <td class="alinharADireita">R$&nbsp;19,44</td>
+                <td>
+                  <a href="/produtos/10" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/10">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Lanche especial de berinjelas</td>
+                <td>Berinjela marinada, molho especial, verduras.</td>
+                <td class="alinharADireita">R$&nbsp;21,90</td>
+                <td>
+                  <a href="/produtos/11" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/11">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Tomates marinados em vinagre</td>
+                <td>Tomate, vinagre de uva, salsa, sementes de abóbora, azeite, alho.</td>
+                <td class="alinharADireita">R$&nbsp;12,62</td>
+                <td>
+                  <a href="/produtos/12" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/12">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Petisco de batata</td>
+                <td>Batata, queijo branco, queijo motal, tomate seco, queijo gouda, azeite, alho.</td>
+                <td class="alinharADireita">R$&nbsp;17,84</td>
+                <td>
+                  <a href="/produtos/13" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/13">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Salada de berinjela</td>
+                <td>Berinjela, tomate, pimentão, pimentão, óleo de milho, alho, verduras frescas.</td>
+                <td class="alinharADireita">R$&nbsp;23,50</td>
+                <td>
+                  <a href="/produtos/14" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/14">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Salada Russa</td>
+                <td>Carne, batata, cenoura, ovos, pepino fresco, pepino em conserva, maionese, ervilha.</td>
+                <td class="alinharADireita">R$&nbsp;25,10</td>
+                <td>
+                  <a href="/produtos/15" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/15">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Salada crocante de berinjela</td>
+                <td>Berinjelas, tomates, molho de ostra, sementes de gergelim branco.</td>
+                <td class="alinharADireita">R$&nbsp;27,56</td>
+                <td>
+                  <a href="/produtos/16" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/16">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Sopa de frango com arroz</td>
+                <td>Frango, arroz redondo, cebola, cenoura, ameixa cereja, cúrcuma.</td>
+                <td class="alinharADireita">R$&nbsp;27,56</td>
+                <td>
+                  <a href="/produtos/17" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/17">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Sopa de macarrão com almôndegas</td>
+                <td>Macarrão caseiro, vitela, caldo de carne, cebola, cenoura, açafrão, feijão mungo.</td>
+                <td class="alinharADireita">R$&nbsp;26,69</td>
+                <td>
+                  <a href="/produtos/18" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/18">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Sopa de cebola</td>
+                <td>Cebola, farinha de trigo, batata, ovos, coentro, manteiga.</td>
+                <td class="alinharADireita">R$&nbsp;23,50</td>
+                <td>
+                  <a href="/produtos/19" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/19">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Filé mignon com batata</td>
+                <td>Filé mignon, manteiga, pimenta do reino, tomate, batata.</td>
+                <td class="alinharADireita">R$&nbsp;57,29</td>
+                <td>
+                  <a href="/produtos/20" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/20">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>Dolma do Azerbaijão</td>
+                <td>Vitela, borrego, beringela, tomate, pimentão.</td>
+                <td class="alinharADireita">R$&nbsp;51,49</td>
+                <td>
+                  <a href="/produtos/21" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/21">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>Fritas com Carne</td>
+                <td>Massa, vitela, rabo gordo, verduras frescas.</td>
+                <td class="alinharADireita">R$&nbsp;39,89</td>
+                <td>
+                  <a href="/produtos/22" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/22">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>Vitela com cogumelos em molho picante</td>
+                <td>Vitela, cogumelos, manteiga, molho de pimenta doce, cebola, coentro.</td>
+                <td class="alinharADireita">R$&nbsp;35,69</td>
+                <td>
+                  <a href="/produtos/23" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/23">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>Tabaka de frango</td>
+                <td>Frango para duas pessoas</td>
+                <td class="alinharADireita">R$&nbsp;28,29</td>
+                <td>
+                  <a href="/produtos/24" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/24">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>Filé de frango com batata</td>
+                <td>Filé de frango, batata, tomate</td>
+                <td class="alinharADireita">R$&nbsp;22,49</td>
+                <td>
+                  <a href="/produtos/25" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/25">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>Frango árabe</td>
+                <td>Frango, cebola, tomate, pimentão, berinjela, batata.</td>
+                <td class="alinharADireita">R$&nbsp;27,29</td>
+                <td>
+                  <a href="/produtos/26" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/26">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>Frutas da estação</td>
+                <td>Maçã, pêssego, morango, melão e uvas.</td>
+                <td class="alinharADireita">R$&nbsp;15,10</td>
+                <td>
+                  <a href="/produtos/27" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/27">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>Geléia</td>
+                <td>Geléia de amoras, morango e pêssego.</td>
+                <td class="alinharADireita">R$&nbsp;21,33</td>
+                <td>
+                  <a href="/produtos/28" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/28">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>29</td>
+                <td>Variedade de frutas secas e nozes</td>
+                <td>Castanhas, damasco, uvas secas e nozes</td>
+                <td class="alinharADireita">R$&nbsp;19,30</td>
+                <td>
+                  <a href="/produtos/29" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/29">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>30</td>
+                <td>Sorvete</td>
+                <td>Sorvete de morango.</td>
+                <td class="alinharADireita">R$&nbsp;14,09</td>
+                <td>
+                  <a href="/produtos/30" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/30">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>31</td>
+                <td>Vinho tinto</td>
+                <td>Vinho tinto seco, francês.</td>
+                <td class="alinharADireita">R$&nbsp;47,89</td>
+                <td>
+                  <a href="/produtos/31" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/31">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>32</td>
+                <td>Cerveja Pilsen</td>
+                <td>Caneco de cerveja Pilsen de 500ml.</td>
+                <td class="alinharADireita">R$&nbsp;11,90</td>
+                <td>
+                  <a href="/produtos/32" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/32">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>33</td>
+                <td>Xícara de chá</td>
+                <td>Xícara de chá de ervas egípcias.</td>
+                <td class="alinharADireita">R$&nbsp;5,34</td>
+                <td>
+                  <a href="/produtos/33" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/33">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>34</td>
+                <td>Capuccino</td>
+                <td>Xícara pequena de café.</td>
+                <td class="alinharADireita">R$&nbsp;8,30</td>
+                <td>
+                  <a href="/produtos/34" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/34">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>35</td>
+                <td>Coquetel de maracujá</td>
+                <td>Coquetel de vodka com maracujá.</td>
+                <td class="alinharADireita">R$&nbsp;16,99</td>
+                <td>
+                  <a href="/produtos/35" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/produtos/35">Excluir</a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+
+        <div id="clientes" style="display: none;" class="tabcontent"></div>
+
+        <div id="pedidos" style="display: none;" class="tabcontent"></div>
+
+        <div id="categorias" style="display: block;" class="tabcontent">
+          <h3 class="alerta">Tem certeza que deseja excluir a categoria?</h3>
+
+          <div>
+            <form name="categorias" action="/#" method="post">
+              <input id="id" name="id" type="hidden" value="1">
+              <div>
+                <label for="nome">Nome</label>
+                <input disabled="" id="nome" name="nome" type="text">
+              </div>
+              <label></label>
+              <input id="btnConfimar" type="button" value="Confimar">
+              <input id="btnCancelar" type="button" value="Cancelar">
+            </form>
+          </div>
+        </div>
+
+        <div id="status" style="display: none;" class="tabcontent"></div>
+
+        <div id="pratoDoDia" style="display: none;" class="tabcontent"></div>
+
+        <div id="logado" style="display: none;" class="tabcontent"></div>
+      </main>
+      <footer>
+        <span class="footer">
+          <strong>© 2021 MyFood</strong>. Todos os direitos reservados.
+        </span>
+      </footer>
+    </div>
+    <!-- <script type="module" src="./js/index.js"></script> -->
+  </body>
+  </html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>MyFood</title>
+  </head>
+  <body>
+    <header><img class="logo" src="./img/myfood.png">
+      <nav class="menu">
+        <ul>
+          <li id="menu-home" class="menu-item">
+            <a href="/" path="home">Home</a>
+          </li>
+          <span>|</span>
+          <li id="menu-cardapio" class="menu-item">
+            <a href="/" path="cardapio">Cardápio</a>
+          </li>
+          <span>|</span>
+          <li id="menu-carrinho" class="menu-item">
+            <a href="/" path="carrinho" id="menuCarrinho">Carrinho
+              <span style="color:red">(9)
+              </span>
+            </a>
+          </li>
+          <span>|</span>
+          <li id="menu-cadastros" class="menu-item">
+            <a href="/" path="cadastros">Cadastros</a>
+          </li>
+          <span>|</span>
+          <li id="menu-sobre" class="menu-item">
+            <a href="/" path="sobre">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class="tab">
+          <button class="tablinks active">
+              <a style="color: black;text-decoration: none;" 
+                 href="/produtos_listar.html">Produtos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/clientes_listar.html">Clientes</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pedidos_listar.html">Pedidos</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/categorias_listar.html">Categorias</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/status_listar.html">Status</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/pratodia.html">Prato do dia</a>
+          </button>
+          <button class="tablinks">
+            <a style="color: black;text-decoration: none;" 
+            href="/logado.html">Logado</a>
+          </button>
+        </div>
+
+        <div id="categorias" style="display: block;" class="tabcontent">
+          <div class="titulosListas">
+            <h3>Lista de categorias</h3>
+            <a href="/categorias_incluir.html">Incluir</a>
+          </div>
+
+          <table class="categorias">
+            <thead>
+              <tr>
+                <th style="width: 30px">ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th style="width: 100px">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Cafés</td>
+                <td>Descrição da categoria de cafés</td>
+                <td>
+                  <a href="/categorias_editar.html" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/categorias_excluir.html">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Aperitivos</td>
+                <td>Descrição da categoria de aperitivos</td>
+                <td>
+                  <a href="/categorias/2" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/categorias/2">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Saladas</td>
+                <td>Descrição da categoria de saladas</td>
+                <td>
+                  <a href="/categorias/3" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/categorias/3">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Sopas</td>
+                <td>Descrição da categoria de sopas</td>
+                <td>
+                  <a href="/categorias/4" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/categorias/4">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Carnes</td>
+                <td>Descrição da categoria de carnes</td>
+                <td>
+                  <a href="/categorias/5" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/categorias/5">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Frango</td>
+                <td>Descrição da categoria de frango</td>
+                <td>
+                  <a href="/categorias/6" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/categorias/6">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Sobremesas</td>
+                <td>Descrição da categoria de sobremesas</td>
+                <td>
+                  <a href="/categorias/7" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/categorias/7">Excluir</a>
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Bebidas</td>
+                <td>Descrição da categoria de bebidas</td>
+                <td>
+                  <a href="/categorias/8" style="display: inline-block; width: 40px;">Editar</a>
+                  <a href="/categorias/8">Excluir</a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+      </main>
+      <footer>
+        <span class="footer">
+          <strong>© 2021 MyFood</strong>. Todos os direitos reservados.
+        </span>
+      </footer>
+    </div>
+    <!-- <script type="module" src="./js/index.js"></script> -->
+  </body>
+  </html>
